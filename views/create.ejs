@@ -17,30 +17,42 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">Inicio</a>
-              </li>                               
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Crud con NodeJs y Express en deploy con Render, Lennard Idone</a>
+              </li>                              
             </ul>            
           </div>
         </div>
       </nav>
-      <div class="container mt-4">     
+      <div class="container mt-4" style="width: 60%;">     
             <div class="card border-secondary">  
-                <div class="card-header">Nuevo Registro</div>
+                <center>
+                   <h2>
+                    Nuevo Alumno
+                    <hr>
+                  </h2>
+                </center>
                 <div class="card-body">
                     <form action="/save" method="POST">
                         <div class="mb-3">
-                        <label for="user" class="form-label">Usuario</label>
-                        <input type="text" class="form-control" id="user" name="user" tabindex="1">
+                        <label for="" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" tabindex="1">
                         </div>   
                         <div class="mb-3">
-                        <label for="user" class="form-label">Rol</label>
-                        <select id="rol" name="rol" class="form-select" aria-label="Default select example" tabindex="2">
-                            <option value="admin" selected>Admin</option>
-                            <option value="data entry">Data Entry</option>                    
+                        <label for="" class="form-label">Carrera</label>
+                        <select id="carrera" name="carrera" class="form-select" aria-label="Default select example" tabindex="2">
+                            <option value="Diseño y desarrollo de software" selected>Diseño y desarrollo de software</option>
+                            <option value="Mecanica" selected>Mecanica</option>
+                            <option value="Desarrollo de videojuegos" selected>Desarrollo de videojuegos</option>
+                            <option value="Administración de redes" selected>Administración de redes</option>
+                                       
                         </select>
-                        </div>                                   
-                        <button type="submit" class="btn btn-primary" tabindex="5">Guardar</button>
-                        <a href="/" class="btn btn-secondary">Cancelar</a>
+                        </div>   
+                        <center>
+                          <button type="submit" class="btn btn-primary" tabindex="5">Guardar</button>
+                          <a href="/" class="btn btn-secondary">Cancelar</a>
+
+                        </center>                                
+                        
                     </form>
                 </div>
             </div>        

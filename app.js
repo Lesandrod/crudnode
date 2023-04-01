@@ -7,4 +7,4 @@ app.use(express.json());
 app.use('/', require('./router'));
 
 app.listen(3000);
-console.log('Servidor conectado')
+console.log('¡Servidor levantado satisfactoriamente!')

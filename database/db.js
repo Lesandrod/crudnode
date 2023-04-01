@@ -7,7 +7,7 @@ conexion.connect((error)=>{
       console.error('El error de conexión es: ' + error);
       return;
     }
-    console.log('¡Conectado a la Base de Datos!');
+    console.log('¡Se estableció la conexión a la base de datos!');
 
   });module.exports = conexion;
 

@@ -16,9 +16,9 @@ exports.save = (req, res)=>{
 
 exports.update = (req, res)=>{
     const id = req.body.id;
-    const user = req.body.nombre;
-    const rol = req.body.carrera;
-    conexion.query('UPDATE users SET ? WHERE id = ?',[{user:nombre, rol:carrera}, id], (error, results)=>{
+    const nombre = req.body.nombre;
+    const carrera = req.body.carrera;
+    conexion.query('UPDATE registros SET ? WHERE id = ?',[{nombre:nombre, carrera:carrera}, id], (error, results)=>{
         if(error){
             console.log(error);
         }else{           
